@@ -1,0 +1,41 @@
+/* Banner.module.css */
+
+.bannerImage {
+  display: block;
+  width: 100%;
+  height: auto; 
+  border-radius: 20px;
+  opacity: 1;
+  filter: brightness(0.7); 
+}
+
+.bannerTitle {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 768px) {
+  .bannerImage {
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .bannerTitle {
+    width: 43%;
+    font-size: 18px;
+    text-align: left;
+    left: 25%;
+    margin: 0;
+    line-height: 1.2; 
+    white-space: pre-line;
+  }
+}
+
+
