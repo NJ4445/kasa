@@ -1,0 +1,39 @@
+/* src/components/Carrousel.css */
+.carrousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carrousel-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .carrousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carrousel-button.prev {
+    left: 10px;
+  }
+  
+  .carrousel-button.next {
+    right: 10px;
+  }
+  
+  .carrousel-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+
+  
+  
