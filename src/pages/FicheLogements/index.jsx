@@ -13,7 +13,7 @@ function FicheLogements() {
     setLogement(fetchedLogement);
   }, [id]);
 
-  if (!logement) {
+  if (!logement) { 
     return <div>Loading...</div>;
   }
 
