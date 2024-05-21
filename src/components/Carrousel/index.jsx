@@ -49,4 +49,4 @@ const Carrousel = ({ logementId }) => {
   );
 };
 
-export default Carrousel;
+export default Carrousel;  
