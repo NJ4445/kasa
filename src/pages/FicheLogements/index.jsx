@@ -31,7 +31,7 @@ function FicheLogements() {
           <span key={i}>{i < logement.rating ? '★' : '☆'}</span>
         ))}
       </div>
-      <div className={styles.tags}>
+      <div className={styles.tags}> 
         {logement.tags.map((tag, index) => (
           <span key={index} className={styles.tag}>{tag}</span>
         ))}
