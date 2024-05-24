@@ -66,8 +66,7 @@
   }
 
   .slide-number {
-    font-size: 1rem;
-    padding: 4px 8px;
+    display: none;
   }
 }
 

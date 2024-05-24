@@ -29,7 +29,6 @@
     margin: 0px;
 }
   
-
 /* Media query pour les écrans mobiles (max-width: 768px)  */
 @media (max-width: 768px) {
     .collapse {
