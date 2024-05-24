@@ -27,7 +27,11 @@ const CollapseDetails = ({ id }) => {
       <div className={styles.collapse}>
         <div className={styles.banniereCollapse} onClick={toggleDescription}>
           Description
-          <img src={isDescriptionOpen ? vectorOpen : vectorClosed} alt='icone flèche' className={styles.img} />
+          <img
+            src={isDescriptionOpen ? vectorOpen : vectorClosed}
+            alt='icone flèche'
+            className={styles.img}
+          />
         </div>
         {isDescriptionOpen && (
           <div className={`${styles.description} ${styles.descriptionOpen}`}>{logement.description}</div>
@@ -36,7 +40,11 @@ const CollapseDetails = ({ id }) => {
       <div className={styles.collapse}>
         <div className={styles.banniereCollapse} onClick={toggleEquipments}>
           Équipements
-          <img src={isEquipmentsOpen ? vectorOpen : vectorClosed} alt='icone flèche' className={styles.img} />
+          <img
+            src={isEquipmentsOpen ? vectorOpen : vectorClosed}
+            alt='icone flèche'
+            className={styles.img}
+          />
         </div>
         {isEquipmentsOpen && (
           <div className={`${styles.equipements} ${styles.equipementsOpen}`}>
