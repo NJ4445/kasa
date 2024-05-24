@@ -15,9 +15,12 @@
   
   .title {
     position: absolute;
-    bottom: 5px;
-    left: 10px;
+    bottom: 20px;
     font-size: 18px;
+    left: 10px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
     color: #FFFFFF;
   }
 
@@ -29,11 +32,10 @@
   }
 
   .title {
-    bottom: 10px; 
-    left: 5px; 
-    font-size: 16px; 
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
   }
-
 }
 
 @media (max-width: 480px) {
