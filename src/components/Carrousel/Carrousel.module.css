@@ -1,7 +1,8 @@
+/* Carrousel.module.css */
 .carrousel {
   position: relative;
   width: 100%;
-  height: 50vh; /* ou toute autre hauteur souhaitée */
+  height: 50vh; 
   overflow: hidden;
   border-radius: 15px;
 }
@@ -9,8 +10,8 @@
 .carrousel-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Les images couvriront tout l'espace sans déformation */
-  object-position: center; /* Centre l'image */
+  object-fit: cover; 
+  object-position: center; 
   display: block;
   border-radius: 15px;
 }
@@ -45,23 +46,22 @@
 .slide-number {
   position: absolute;
   bottom: 10px;
-  left: 50%; /* Centrer horizontalement */
-  transform: translateX(-50%); /* Centrer horizontalement */
+  left: 50%; 
+  transform: translateX(-50%); 
   color: white;
   font-size: 1.2rem;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-
-/* Ajout des styles pour les médias max-width: 768px */
+/* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
   .carrousel {
-    height: 40vh; /* Par exemple, une hauteur différente pour les écrans plus petits */
+    height: 40vh; 
   }
 
   .carrousel-button img {
-    width: 25px; /* Taille réduite des flèches pour les écrans plus petits */
+    width: 25px; 
     height: 25px;
   }
 
@@ -71,14 +71,14 @@
   }
 }
 
-/* Ajout des styles pour les médias max-width: 480px */
+/* Ajout des styles pour les médias (max-width: 480px)  */
 @media (max-width: 480px) {
   .carrousel {
-    height: 30vh; /* Par exemple, une hauteur encore plus petite pour les écrans très petits */
+    height: 30vh; 
   }
 
   .carrousel-button img {
-    width: 20px; /* Taille encore réduite des flèches pour les écrans très petits */
+    width: 20px; 
     height: 20px;
   }
 

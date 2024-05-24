@@ -1,3 +1,4 @@
+// Error.jsx
 import { Link } from "react-router-dom";
 import styles from './Error.module.css'
 

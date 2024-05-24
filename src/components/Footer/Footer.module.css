@@ -1,5 +1,4 @@
 /* Footer.module.css */
-
 .footer {
     width: 100%;
     background-color: #000000;
@@ -27,7 +26,7 @@
 }
 
 
-/* Media query pour les écrans mobiles */
+/* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     .footer p {
         width: 133.59px;

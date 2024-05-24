@@ -1,3 +1,4 @@
+// Carrousel.jsx
 import React, { useState, useEffect } from 'react';
 import leftArrow from '../../assets/leftVector.png';
 import rightArrow from '../../assets/rightVector.png';

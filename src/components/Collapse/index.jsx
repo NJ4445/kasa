@@ -1,3 +1,4 @@
+// Collapse.jsx
 import React, { useState } from 'react';
 import vectorOpen from '../../assets/Vector_open.png';
 import vectorClosed from '../../assets/Vector_closed.png';

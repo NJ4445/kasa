@@ -1,5 +1,4 @@
 /* Header.module.css */
-
 .header {
   background-color: #ffffff; 
   margin: 0 100px;
@@ -34,7 +33,7 @@
   text-decoration: underline; 
 }
 
-/* Media query pour les écrans mobiles */
+/* Media query pour les écrans mobiles (max-width: 768px)*/
 @media (max-width: 768px) {
   .header {
     margin: 0 20px; 

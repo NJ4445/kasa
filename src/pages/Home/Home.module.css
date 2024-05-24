@@ -1,5 +1,4 @@
 /* Home.module.css */
-
 /* BannerContainer  */
 .bannerContainer {
   position: relative;
@@ -24,7 +23,7 @@
     margin: 50px 100px;
   }
   
-/* Media query pour les écrans mobiles */
+/* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
   .bannerContainer {
     margin: 0 15px; 

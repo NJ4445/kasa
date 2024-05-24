@@ -1,5 +1,4 @@
 /* About.module.css */
-
 .About {
   margin: 0 100px;
   padding: 0;
@@ -35,7 +34,7 @@
   margin: 0;
 }
 
-/* Media query pour les écrans mobiles */
+/* Media query pour les écrans mobiles (max-width: 768px)  */
 @media (max-width: 768px) {
   
   .About {

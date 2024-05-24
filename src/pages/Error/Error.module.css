@@ -1,5 +1,4 @@
 /* Error.module.css */
-
 .error {
     text-align: center;
     margin-bottom: 100px;
@@ -23,7 +22,7 @@
     color: black; 
   }
   
-  /* Media query pour les écrans mobiles */
+  /* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     .error {
         padding: 20px 0px 0px 0px;

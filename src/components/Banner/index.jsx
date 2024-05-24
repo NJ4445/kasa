@@ -1,4 +1,4 @@
-// Banner.js
+// Banner.jsx
 import React from 'react';
 import imageBanner from '../../assets/banner4.jpg'; 
 import styles from './Banner.module.css';

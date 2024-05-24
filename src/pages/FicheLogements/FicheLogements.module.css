@@ -1,3 +1,4 @@
+/* FicheLogements.module.css */
 .container {
   display: flex;
   flex-direction: column;
@@ -21,14 +22,14 @@
 
 .title {
   margin: 0;
-  font-size: 2rem; /* ~36px */
+  font-size: 2rem; 
   font-weight: 500;
   text-align: left;
   color: #FF6060;
 }
 
 .location {
-  font-size: 1.125rem; /* ~18px */
+  font-size: 1.125rem; 
   color: black;
   margin: 5px 0 0 0;
   font-weight: 500;
@@ -38,9 +39,9 @@
 .host {
   display: flex;
   align-items: center;
-  position: absolute; /* Position absolue */
-  right: 100px; /* À droite du conteneur parent */
-  top: 570px; /* Ajuster selon l'espace nécessaire en dessous de rating */
+  position: absolute; 
+  right: 100px; 
+  top: 570px; 
 }
 
 .host p {
@@ -67,17 +68,17 @@
 
 .tagsAndRating {
   display: flex;
-  flex-direction: column; /* Changement de la direction pour les écrans plus petits */
-  position: relative; /* Position relative pour contenir les éléments absolus */
+  flex-direction: column; 
+  position: relative; 
   width: 100%;
   margin: 0 0 30px 0;
 }
 
 .rating {
   display: flex;
-  position: absolute; /* Position absolue */
-  right: 0; /* À droite du conteneur parent */
-  top: 0; /* En haut du conteneur parent */
+  position: absolute; 
+  right: 0; 
+  top: 0;
 }
 
 .star {
@@ -102,13 +103,14 @@
   font-weight: 500;
 }
 
+/* Media query pour les écrans mobiles (max-width: 768px)  */
 @media (max-width: 768px) {
   .container {
     margin: 0 3%;
   }
 
   .title {
-    font-size: 28px; /* ~28px */
+    font-size: 28px; 
   }
 
   .titleHostContainer {
@@ -117,48 +119,48 @@
   }
 
   .location {
-    font-size: 12px; /* ~14px */
+    font-size: 12px; 
   }
 
   .tagsAndRating {
     flex-direction: column;
     justify-content: flex-start;
     gap: 10px;
-    position: relative; /* Pour contenir les éléments absolus */
+    position: relative; 
   }
 
   .rating {
-    /* Ajuster si nécessaire */
-    position: absolute; /* Position absolue */
+    position: absolute;
     width: 30%;
     height: auto;
-    left: 0; /* À droite du conteneur parent */
-    top: 40px  ; /* En haut du conteneur parent */
+    left: 0; 
+    top: 40px  ; 
   }
 
   .host {
-    margin-top: 10px; /* Ajuster l'espacement si nécessaire */
-    position: absolute; /* Position absolue */
-    right: 10px; /* À droite du conteneur parent */
-    top: 430px; /* Ajuster selon l'espace nécessaire en dessous de rating */
+    margin-top: 10px; 
+    position: absolute; 
+    right: 10px;
+    top: 430px; 
   }
 
   .star {
-    margin-right: 3px; /* Ajuster si nécessaire */
+    margin-right: 3px; 
   }
 
   .tags {
-    gap: 10px; /* Ajuster si nécessaire */
+    gap: 10px; 
     margin-bottom: 10px;
     border-radius: 10px;
   }
 
   .tag {
-    font-size: 10px; /* Ajuster si nécessaire */
-    padding: 5px 15px; /* Ajuster si nécessaire */
+    font-size: 10px; 
+    padding: 5px 15px; 
   }
 }
 
+/* Media query pour les écrans mobiles (max-width: 480px)  */
 @media (max-width: 480px) {
   .container {
     margin: 0 2%;
