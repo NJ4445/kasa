@@ -1,0 +1,117 @@
+.collapseDetails {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between; /* Pour espacer les collapses */
+    gap: 70px; /* Espace entre les collapses */
+    border-radius: 10px;
+}
+
+.collapse {
+    flex: 1; /* Pour que chaque collapse prenne une part égale de l'espace disponible */
+}
+
+.banniereCollapse {
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    height: 45px;
+    cursor: pointer;
+    font-weight: 500; /* Ajoutez cette ligne */
+}
+
+.img {
+    height: 15px;
+}
+
+.description,
+.equipements {
+    display: none;
+}
+
+.collapse .description,
+.collapse .equipements {
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.descriptionOpen {
+    padding: 20px;
+}
+
+.equipementsOpen {
+    padding: 20px; /* Pas de padding pour la section Équipements */
+    margin: 0; /* Ajouter cette ligne pour supprimer les marges */
+    line-height: 1;
+}
+
+.equipements ul {
+    list-style-type: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+}
+
+.equipements li {
+    margin: 0;
+    padding: 5px 0; /* Ajouter un peu de padding pour les éléments de la liste si nécessaire */
+}
+
+@media (max-width: 768px) {
+    .img {
+        height: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .collapseDetails {
+            flex-direction: column; /* Change la direction du flux en colonne */
+            gap: 20px; /* Espace entre les collapses en colonne */
+            margin-top: 30px;
+        }
+    
+        .collapse {
+            margin: 0 0 20px 0; /* Ajuste les marges des collapses en colonne */
+        }
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .img {
+        height: 8px; /* Ajustez la hauteur de l'image pour les écrans plus petits */
+    }
+
+    .collapseDetails {
+        flex-direction: column; /* Change la direction du flux en colonne pour les écrans plus petits */
+        gap: 10px; /* Espace entre les collapses en colonne pour les écrans plus petits */
+    }
+
+    .collapse {
+        margin: 0 0 10px 0; /* Ajuste les marges des collapses en colonne pour les écrans plus petits */
+    }
+
+    .banniereCollapse {
+        height: 40px; /* Ajustez la hauteur de la bannière pour les écrans plus petits */
+        font-size: 14px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+
+    .descriptionOpen,
+    .equipementsOpen {
+        padding: 10px; /* Ajustez le padding pour les sections ouvertes pour les écrans plus petits */
+    }
+
+    .equipements li {
+        padding: 3px 0; /* Ajustez le padding pour les éléments de la liste pour les écrans plus petits */
+    }
+}
+
+
+/* Optionnel : ajouter un style global pour réinitialiser les marges par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

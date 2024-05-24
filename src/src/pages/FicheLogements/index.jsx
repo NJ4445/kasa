@@ -9,7 +9,7 @@ import greyStar from '../../assets/greyStar.png';
 
 function FicheLogements() {
   let { id } = useParams();
-  const [logement, setLogement] = useState(null); 
+  const [logement, setLogement] = useState(null);
 
   useEffect(() => {
     const fetchedLogement = logements.find((item) => item.id === id);
