@@ -20,9 +20,6 @@
 
 .description {
     display: none; /* Masquer la description par défaut */
-
-    
- 
 }
 
 /* Afficher la description lorsque le collapsible est ouvert */

@@ -41,6 +41,19 @@
   transition: transform 0.2s, border-color 0.2s; 
 }
 
+/* Numérotation des slides */
+.slide-number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer horizontalement */
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
 /* Ajout des styles pour les médias max-width: 768px */
 @media (max-width: 768px) {
   .carrousel {
@@ -50,6 +63,11 @@
   .carrousel-button img {
     width: 25px; /* Taille réduite des flèches pour les écrans plus petits */
     height: 25px;
+  }
+
+  .slide-number {
+    font-size: 1rem;
+    padding: 4px 8px;
   }
 }
 
@@ -62,5 +80,10 @@
   .carrousel-button img {
     width: 20px; /* Taille encore réduite des flèches pour les écrans très petits */
     height: 20px;
+  }
+
+  .slide-number {
+    font-size: 0.8rem;
+    padding: 3px 6px;
   }
 }
