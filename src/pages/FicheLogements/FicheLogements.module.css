@@ -52,9 +52,10 @@
   opacity: 0px;
   font-size: 17px;
   font-weight: 500;
-  line-height: 25.67px;
+  line-height: 20px;
   text-align: right;
   color: #FF6060;
+  padding-top: 5px;
 }
 
 .host img {
@@ -107,7 +108,7 @@
   }
 
   .title {
-    font-size: 18px; /* ~28px */
+    font-size: 28px; /* ~28px */
   }
 
   .titleHostContainer {
@@ -116,7 +117,7 @@
   }
 
   .location {
-    font-size: 0.875rem; /* ~14px */
+    font-size: 12px; /* ~14px */
   }
 
   .tagsAndRating {
@@ -127,10 +128,12 @@
   }
 
   .rating {
-    margin-top: 10px; /* Ajuster si nécessaire */
+    /* Ajuster si nécessaire */
     position: absolute; /* Position absolue */
-    right: 250px; /* À droite du conteneur parent */
-    top: 30px  ; /* En haut du conteneur parent */
+    width: 30%;
+    height: auto;
+    left: 0; /* À droite du conteneur parent */
+    top: 40px  ; /* En haut du conteneur parent */
   }
 
   .host {
@@ -147,6 +150,7 @@
   .tags {
     gap: 10px; /* Ajuster si nécessaire */
     margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   .tag {
