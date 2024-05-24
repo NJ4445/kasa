@@ -9,14 +9,17 @@
     align-items: center;
     padding: 30px 0 20px 0;
     margin-top: auto; 
+    height: 200px;
 }
 
 .divLogo {
     max-width: 50%;
+    margin: 20px;
 }
 
 .divLogo img {
     max-width: 100%;
+    margin: 10px;
 }
 
 .footer p {
@@ -32,5 +35,9 @@
         font-weight: 500;
         line-height: 17.11px;
         text-align: center;
+    }
+
+    .divLogo {
+        margin: 20px 0 5px 0;
     }
 }
