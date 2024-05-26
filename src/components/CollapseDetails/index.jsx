@@ -1,6 +1,6 @@
+// CollapseDetails.jsx
 import React, { useState } from 'react';
-import vectorOpen from '../../assets/Vector_open.png';
-import vectorClosed from '../../assets/Vector_closed.png';
+import VectorClosed from '../../assets/Vector.png';
 import logements from '../../datas/logements.json';
 import styles from './CollapseDetails.module.css';
 
@@ -9,10 +9,6 @@ const CollapseDetails = ({ id }) => {
   const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
 
   const logement = logements.find(logement => logement.id === id);
-
-  if (!logement) {
-    return <div>Logement not found</div>;
-  }
 
   const toggleDescription = () => {
     setIsDescriptionOpen(!isDescriptionOpen);
@@ -28,9 +24,9 @@ const CollapseDetails = ({ id }) => {
         <div className={styles.banniereCollapse} onClick={toggleDescription}>
           Description
           <img
-            src={isDescriptionOpen ? vectorOpen : vectorClosed}
+            src={VectorClosed}
             alt='icone flèche'
-            className={styles.img}
+            className={`${styles.img} ${isDescriptionOpen ? styles.expanded : styles.collapsed}`}
           />
         </div>
         {isDescriptionOpen && (
@@ -41,9 +37,9 @@ const CollapseDetails = ({ id }) => {
         <div className={styles.banniereCollapse} onClick={toggleEquipments}>
           Équipements
           <img
-            src={isEquipmentsOpen ? vectorOpen : vectorClosed}
+            src={VectorClosed}
             alt='icone flèche'
-            className={styles.img}
+            className={`${styles.img} ${isEquipmentsOpen ? styles.expanded : styles.collapsed}`}
           />
         </div>
         {isEquipmentsOpen && (

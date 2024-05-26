@@ -12,15 +12,24 @@
     color: #FFFFFF;
     border-radius: 5px;
     height: 45px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .img {
     height: 15px;
+    transition: transform 0.3s ease; /* Ajoute une transition pour la rotation */
+}
+
+.collapsed {
+    transform: rotate(0deg); /* Flèche vers le haut */
+}
+
+.expanded {
+    transform: rotate(180deg); /* Rotation de 180 degrés pour la flèche vers le bas */
 }
 
 .description {
-    display: none; 
+    display: none;
 }
 
 /* Afficher la description lorsque le collapsible est ouvert */
@@ -28,8 +37,8 @@
     display: block;
     margin: 0px;
 }
-  
-/* Media query pour les écrans mobiles (max-width: 768px)  */
+
+/* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     .collapse {
         margin: 0 20px 30px 20px;
@@ -40,14 +49,14 @@
     }
 }
 
-/* Media query pour les écrans mobiles (max-width: 480px)  */
+/* Media query pour les écrans mobiles (max-width: 480px) */
 @media (max-width: 480px) {
     .collapse {
         margin: 0 20px 30px 20px;
     }
 
     .banniereCollapse {
-        height: 35px; 
+        height: 35px;
     }
 
     .img {
@@ -55,7 +64,6 @@
     }
 
     .description {
-        margin-top: 5px; 
+        margin-top: 5px;
     }
 }
-

@@ -1,3 +1,4 @@
+/* CollapseDetails.module.css */
 .collapseDetails {
     width: 100%;
     margin-bottom: 50px;
@@ -24,10 +25,23 @@
     font-weight: 500;
   }
   
-  .img {
-    height: 15px;
-  }
-  
+  .banniereCollapse {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img {
+    transition: transform 0.3s ease;
+}
+
+.collapsed {
+    transform: rotate(0deg);
+}
+
+.expanded {
+    transform: rotate(180deg);
+}
   .description,
   .equipements {
     display: none;

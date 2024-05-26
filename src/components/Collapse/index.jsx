@@ -1,7 +1,6 @@
 // Collapse.jsx
 import React, { useState } from 'react';
-import vectorOpen from '../../assets/Vector_open.png';
-import vectorClosed from '../../assets/Vector_closed.png';
+import Vector from '../../assets/Vector.png'; 
 import styles from './Collapse.module.css';
 
 export default function Collapse({ titre, description }) {
@@ -15,7 +14,11 @@ export default function Collapse({ titre, description }) {
         <div className={styles.collapse}>
             <div className={styles.banniereCollapse} onClick={handleToggle}>
                 {titre}
-                <img src={isCollapsed ? vectorClosed : vectorOpen} alt='icone flèche' className={styles.img} />
+                <img
+                    src={Vector} 
+                    alt='icone flèche'
+                    className={`${styles.img} ${isCollapsed ? styles.collapsed : styles.expanded}`} // Applique la rotation en fonction de l'état
+                />
             </div>
             {!isCollapsed && <div className={styles.description}>{description}</div>}
         </div>
