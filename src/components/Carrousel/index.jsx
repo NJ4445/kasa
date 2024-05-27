@@ -1,4 +1,3 @@
-// Carrousel.jsx
 import React, { useState, useEffect } from 'react';
 import leftArrow from '../../assets/leftVector.png';
 import rightArrow from '../../assets/rightVector.png';
@@ -8,6 +7,7 @@ import styles from '../Carrousel/Carrousel.module.css';
 const Carrousel = ({ logementId }) => {
   const logement = logements.find(logement => logement.id === logementId);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideText, setSlideText] = useState('');
 
   useEffect(() => {
     if (logement && logement.pictures) {
@@ -15,9 +15,16 @@ const Carrousel = ({ logementId }) => {
     }
   }, [logement]);
 
-  if (!logement || !logement.pictures || logement.pictures.length === 0) {
-    return <div className={styles.carrousel}>No images available</div>;
-  }
+  useEffect(() => {
+    const updateSlideNumber = () => {
+      const slideNumber = currentIndex + 1;
+      setSlideText(`${slideNumber}/${logement.pictures.length}`);
+    };
+
+    if (logement && logement.pictures) {
+      updateSlideNumber();
+    }
+  }, [currentIndex, logement]);
 
   const handlePrevClick = () => {
     setCurrentIndex(prevIndex =>
@@ -31,11 +38,15 @@ const Carrousel = ({ logementId }) => {
     );
   };
 
+  if (!logement || !logement.pictures || logement.pictures.length === 0) {
+    return <div className={styles.carrousel}>No images available</div>;
+  }
+
   return (
     <div className={styles.carrousel}>
       <img
         src={logement.pictures[currentIndex]}
-        alt={`${logement.title} ${currentIndex + 1}/${logement.pictures.length}`}
+        alt={`${logement.title} ${slideText}`}
         className={styles['carrousel-image']}
       />
       {logement.pictures.length > 1 && (
@@ -58,7 +69,7 @@ const Carrousel = ({ logementId }) => {
       )}
       {logement.pictures.length > 1 && (
         <div className={styles['slide-number']}>
-          {currentIndex + 1}/{logement.pictures.length}
+          {slideText}
         </div>
       )}
     </div>
