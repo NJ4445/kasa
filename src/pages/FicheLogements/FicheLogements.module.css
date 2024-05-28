@@ -21,7 +21,7 @@
 }
 
 .title {
-  margin: 0;
+  margin-top: 10px;
   font-size: 2rem; 
   font-weight: 500;
   text-align: left;
@@ -41,7 +41,7 @@
   align-items: center;
   position: absolute; 
   right: 100px; 
-  top: 570px; 
+  top: 575px; 
 }
 
 .host p {
@@ -49,14 +49,12 @@
   height: 52px;
   top: 608px;
   left: 1170px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 17px;
+  font-family: Montserrat;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 25.67px;
   text-align: right;
   color: #FF6060;
-  padding-top: 5px;
 }
 
 .host img {
@@ -77,14 +75,14 @@
 .rating {
   display: flex;
   position: absolute; 
-  right: 0; 
+  right: -10px; 
   top: 0;
 }
 
 .star {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .tags {
@@ -106,10 +104,11 @@
 /* Media query pour les écrans mobiles (max-width: 768px)  */
 @media (max-width: 768px) {
   .container {
-    margin: 0 3%;
+    margin: 0 5%;
   }
 
   .title {
+    margin: 0 5px;
     font-size: 15px; 
   }
 
@@ -119,6 +118,7 @@
   }
 
   .location {
+    margin-left: 5px;
     font-size: 12px; 
   }
 
@@ -130,39 +130,52 @@
   }
 
   .rating {
-    position: absolute;
-    width: 30%;
-    height: auto;
-    left: 0; 
-    top: 40px  ; 
+    width: 98px;
+    height: 18px;
+    top: 45px;
+    left: 5px;
   }
 
   .host {
-    margin-top: 10px; 
+    margin-top: 12px; 
     position: absolute; 
-    right: 10px;
-    top: 430px; 
+    right: 23px;
+    top: 445px; 
   }
 
-  .star {
-    margin-right: 3px; 
+  .host p {
+    width: 55px;
+    height: 33px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: right;
   }
 
-  .tags {
-    gap: 10px; 
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
+    .host img {
+    width: 32px;
+    height: 32px;
+    top: 0.5px;
+    left: 103.5px;
+    gap: 0px;
+    opacity: 0px;
+    
+    }
 
-  .tag {
-    font-size: 10px; 
-    padding: 5px 15px; 
+    .star {
+      margin-right: 3px; 
+    }
+
+    .tags {
+      max-width: 100%;
+      gap:  3px; 
+      margin: 0 0 10px 2px;
+    }
+
+    .tag {
+      font-size: 8px; 
+      padding: 5px 15px; 
+      border-radius: 5px;
   }
 }
 
-/* Media query pour les écrans mobiles (max-width: 480px)  */
-@media (max-width: 480px) {
-  .container {
-    margin: 0 2%;
-  }
-}
