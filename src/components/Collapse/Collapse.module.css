@@ -17,15 +17,15 @@
 
 .img {
     height: 15px;
-    transition: transform 0.3s ease; /* Ajoute une transition pour la rotation */
+    transition: transform 0.3s ease; 
 }
 
 .collapsed {
-    transform: rotate(0deg); /* Flèche vers le haut */
+    transform: rotate(0deg); 
 }
 
 .expanded {
-    transform: rotate(180deg); /* Rotation de 180 degrés pour la flèche vers le bas */
+    transform: rotate(180deg); 
 }
 
 .description {
@@ -49,21 +49,4 @@
     }
 }
 
-/* Media query pour les écrans mobiles (max-width: 480px) */
-@media (max-width: 480px) {
-    .collapse {
-        margin: 0 20px 30px 20px;
-    }
 
-    .banniereCollapse {
-        height: 35px;
-    }
-
-    .img {
-        height: 10px;
-    }
-
-    .description {
-        margin-top: 5px;
-    }
-}
