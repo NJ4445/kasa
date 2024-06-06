@@ -1,44 +1,63 @@
 /* Card.module.css */
-.card{
-    position: relative;
+.card {
+  position: relative;
+  overflow: hidden; /* Pour s'assurer que l'effet ne dépasse pas les limites de la carte */
 }
-  
-.link img{
-    object-fit: cover;
-    aspect-ratio: 1;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    filter: brightness(0.7); 
+
+.link {
+  position: relative;
+  display: block;
 }
-  
-  .title {
-    position: absolute;
-    bottom: 20px;
-    font-size: 18px;
-    left: 10px;
-    font-weight: 700;
-    line-height: 25.67px;
-    text-align: left;
-    color: #FFFFFF;
-  }
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%; 
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  pointer-events: none; 
+  border-radius: 10px; 
+}
+
+.link img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  font-size: 18px;
+  left: 10px;
+  font-weight: 700;
+  line-height: 25.67px;
+  text-align: left;
+  color: #FFFFFF;
+  z-index: 1; /* S'assure que le titre est au-dessus du dégradé */
+}
 
 /* Media query pour les écrans mobiles */
 @media (max-width: 768px) {
-  .card {
-    width: 100%; 
-    margin-bottom: 20px; 
-  }
+.card {
+  width: 100%; 
+  margin-bottom: 20px; 
+}
 
-  .title {
-    font-weight: 700;
-    line-height: 25.67px;
-    text-align: left;
-  }
+.title {
+  font-weight: 700;
+  line-height: 25.67px;
+  text-align: left;
+}
 }
 
 @media (max-width: 480px) {
-  .card {
-      font-size: 14px;
-  }
+.card {
+    font-size: 14px;
 }
+}
+

@@ -1,6 +1,6 @@
 /* Collapse.module.css */
 .collapse {
-    margin: 0 100px 50px 100px;
+    margin: 0 0 50px 0;
 }
 
 .banniereCollapse {
@@ -30,23 +30,21 @@
 
 .description {
     display: none;
+    margin: 0px;
 }
 
 /* Afficher la description lorsque le collapsible est ouvert */
-.collapse:not(.collapsed) .description {
+.show {
     display: block;
-    margin: 0px;
 }
 
 /* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     .collapse {
-        margin: 0 20px 30px 20px;
+        margin: 0 0 30px 0;
     }
 
     .img {
         height: 10px;
     }
 }
-
-

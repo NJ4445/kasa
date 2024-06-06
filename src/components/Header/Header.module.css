@@ -1,3 +1,4 @@
+
 /* Header.module.css */
 .header {
   background-color: #ffffff; 
@@ -15,6 +16,7 @@
 
 .nav {
   display: flex; 
+  margin-right: 10px; 
 }
 
 .nav a {
@@ -44,7 +46,11 @@
     width: 80%; 
   }
 
+  .nav {
+    margin-right: 5px; 
+  }
+
 .nav a {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
 }
 }

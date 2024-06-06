@@ -1,12 +1,21 @@
 // Header.jsx
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import styles from '../Header/Header.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState('Accueil');
-  
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    // Set the active link based on the current path
+    if (location.pathname === '/') {
+      setActiveLink('Accueil');
+    } else if (location.pathname === '/about') {
+      setActiveLink('À propos');
+    }
+  }, [location.pathname]);
 
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
@@ -15,7 +24,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link className={styles.divLogo} to="/">
-        <img className={styles.logo} src={logo} alt='logo' />
+        <img className={styles.logo} src={logo} alt="logo" />
       </Link>
       <nav className={styles.nav}>
         <Link

@@ -20,7 +20,9 @@ export default function Collapse({ titre, description }) {
                     className={`${styles.img} ${isCollapsed ? styles.collapsed : styles.expanded}`} // Applique la rotation en fonction de l'état
                 />
             </div>
-            {!isCollapsed && <div className={styles.description}>{description}</div>}
+            <div className={`${styles.description} ${!isCollapsed ? styles.show : ''}`}>
+                {description}
+            </div>
         </div>
     );
 }
