@@ -1,28 +1,30 @@
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import styles from '../Header/Header.module.css';
 
 export default function Header() {
-  const location = useLocation();
-
   return (
     <header className={styles.header}>
-      <Link className={styles.divLogo} to="/">
+      <NavLink className={styles.divLogo} to="/">
         <img className={styles.logo} src={logo} alt="logo" />
-      </Link>
-      <nav className={styles.nav}>
-        <Link
+      </NavLink>
+      <nav className={styles.nav} id="navbar">
+        <NavLink
           to="/"
-          className={location.pathname === '/' ? styles.activeLink : ''}
+          className={({ isActive }) =>
+            isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+          }
         >
           Accueil
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/about"
-          className={location.pathname === '/about' ? styles.activeLink : ''}
+          className={({ isActive }) =>
+            isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+          }
         >
           À propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );
