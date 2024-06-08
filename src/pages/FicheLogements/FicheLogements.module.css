@@ -108,8 +108,9 @@
   }
 
   .title {
+    width: 100%;
     margin: 0 5px;
-    font-size: 15px; 
+    font-size: 12px; 
   }
 
   .titleHostContainer {
@@ -125,58 +126,64 @@
   .tagsAndRating {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
+    height: 20px;
+    gap: 5px;
     position: relative; 
   }
 
   .rating {
-    width: 98px;
-    height: 18px;
-    top: 45px;
+    width: 40%;
+    top: 35px;
     left: 5px;
   }
 
+  .star {
+    margin-right: 3px; 
+  }
+
+  .tags {
+    max-width: 100%;
+    gap:  3px; 
+    margin: 0 0 10px 2px;
+  }
+
+  .tag {
+    font-size: 7px; 
+    padding: 5px 15px; 
+    border-radius: 5px;
+  }
+
   .host {
-    margin-top: 12px; 
-    position: absolute; 
-    right: 23px;
-    top: 445px; 
+    position: relative;
+    height: auto;
+    right: auto; 
+    top: 80px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 5px; 
+    margin-right: 10px;
   }
 
   .host p {
-    width: 55px;
+    width: 40%;
     height: 33px;
     font-size: 12px;
     font-weight: 500;
     line-height: 17.11px;
     text-align: right; 
+
+    margin: 10px 0 0 40px;
+
   }
 
-    .host img {
+  .host img {
     width: 32px;
     height: 32px;
-    top: 0.5px;
-    left: 103.5px;
+    margin-left: 103.5px;
     gap: 0px;
-    opacity: 0px;
-    
-    }
-
-    .star {
-      margin-right: 3px; 
-    }
-
-    .tags {
-      max-width: 100%;
-      gap:  3px; 
-      margin: 0 0 10px 2px;
-    }
-
-    .tag {
-      font-size: 8px; 
-      padding: 5px 15px; 
-      border-radius: 5px;
+    margin-top: -30px;
   }
 }
+
 
 

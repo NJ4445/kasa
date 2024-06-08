@@ -27,11 +27,8 @@
 }
 
 .nav a:hover,
-.nav a:focus {
-  text-decoration: underline; 
-}
-
-.activeLink {
+.nav a:focus,
+.nav a.activeLink {
   text-decoration: underline; 
 }
 
@@ -47,10 +44,13 @@
   }
 
   .nav {
-    margin-right: 5px; 
+    max-width: 100%;
+    margin: 0;
+    gap: 15px;
   }
 
 .nav a {
-  font-size: 0.5rem; 
+  font-size: 0.7rem; 
+  margin-left: 0;
 }
 }
