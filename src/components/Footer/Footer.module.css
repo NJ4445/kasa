@@ -32,6 +32,11 @@
 /* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px)
 {
+	.footer
+{
+	margin-top: 15px;
+}
+
 	.footer p
 	{
 		width: 133.59px;

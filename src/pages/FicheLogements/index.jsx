@@ -1,9 +1,9 @@
-// FicheLogements.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from '../../components/Carrousel/';
 import CollapseDetails from '../../components/CollapseDetails';
 import logements from '../../datas/logements.json';
+import Host from '../../components/Host'; // Importation du composant Host
 import styles from '../FicheLogements/FicheLogements.module.css';
 import redStar from '../../assets/redStar.png';
 import greyStar from '../../assets/greyStar.png';
@@ -34,10 +34,7 @@ function FicheLogements() {
           <h1 className={styles.title}>{logement.title}</h1>
           <p className={styles.location}>{logement.location}</p>
         </div>
-        <div className={styles.host}>
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt={logement.host.name} />
-        </div>
+        <Host name={logement.host.name} picture={logement.host.picture} /> {/* Utilisation du composant Host */}
       </div>
       <div className={styles.tagsAndRating}>
         <div className={styles.tags}>

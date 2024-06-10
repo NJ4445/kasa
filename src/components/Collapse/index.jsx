@@ -12,12 +12,18 @@ export default function Collapse({ titre, description }) {
 
     return (
         <div className={styles.collapse}>
-            <div className={styles.banniereCollapse} onClick={handleToggle}>
+            <div 
+                className={styles.banniereCollapse} 
+                onClick={handleToggle}
+                aria-expanded={!isCollapsed}
+                role="button"
+                tabIndex="0"
+            >
                 {titre}
                 <img
                     src={Vector} 
                     alt='icone flèche'
-                    className={`${styles.img} ${isCollapsed ? styles.collapsed : styles.expanded}`} // Applique la rotation en fonction de l'état
+                    className={`${styles.img} ${isCollapsed ? styles.collapsed : styles.expanded}`} 
                 />
             </div>
             <div className={`${styles.description} ${!isCollapsed ? styles.show : ''}`}>
