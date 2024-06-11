@@ -94,8 +94,8 @@
   }
 
   .location {
-    margin-left: 5px;
     font-size: 12px; 
+    margin: 8px 0 0 5px;
   }
 
   .tagsAndRating {
@@ -109,7 +109,7 @@
   .rating {
     width: 98px;
     height: 18px;
-    top: 35px;
+    top: 20px;
     left: 0px;
     gap: 0px;
     opacity: 0px;
@@ -122,7 +122,7 @@
   .tags {
     max-width: 100%;
     gap:  3px; 
-    margin: 0 0 10px 2px;
+    margin: -10px 0 10px 2px;
   }
 
   .tag {
