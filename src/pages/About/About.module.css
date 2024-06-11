@@ -66,4 +66,9 @@
   .banner::after {
     border-radius: 20px;
   }
+
+  .description {
+    font-size: 13px;
+    padding: 10px ;
+  }
 }

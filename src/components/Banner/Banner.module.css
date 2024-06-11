@@ -41,6 +41,10 @@
 
 /* Media query pour les écrans mobiles */
 @media (max-width: 768px) {
+  .bannerContainer {
+    border-radius: 10px;
+  }
+
   .bannerImage {
     height: 100px;
     border-radius: 10px;
