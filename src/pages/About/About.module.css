@@ -49,7 +49,6 @@
 
 /* Media query pour les écrans mobiles (max-width: 768px)  */
 @media (max-width: 768px) {
-  
   .About {
     margin: 0 15px;
   }
