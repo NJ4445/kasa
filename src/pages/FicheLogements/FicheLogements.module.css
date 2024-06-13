@@ -26,7 +26,7 @@
   font-weight: 500;
   text-align: left;
   color: #FF6060;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .location {
@@ -91,6 +91,7 @@
   .titleHostContainer {
     flex-direction: row;
     align-items: flex-start;
+
   }
 
   .location {
@@ -133,6 +134,3 @@
 
 
 }
-
-
-

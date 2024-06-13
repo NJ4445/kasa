@@ -1,61 +1,58 @@
 /* Host.module.css */
 .host {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: absolute; 
-    right: 105px; 
-    top: 570px;
-  }
-  
-  .host p {
-    width: 93px;
-    height: 52px;
-    top: 608px;
-    left: 1170px;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 25.67px;
-    text-align: right;
-    color: #FF6060;
-  }
-  
-  .host img {
-    border-radius: 50%;
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Media query pour les écrans mobiles (max-width: 768px) */
-  @media (max-width: 768px) {
-    .host {
-        position: relative;
-        height: auto;
-        right: auto; 
-        top: 65px; 
-        right: 5px;
-        flex-direction: column; 
-        align-items: flex-start; 
-      } 
-    
-      .host p {
-        width: 40%;
-        height: 33px;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 17.11px;
-        text-align: right; 
-        margin: 10px 0 0 40px;
-      }
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  right: 105px; 
+  top: 570px;
+}
 
-      .host img {
-        width: 32px;
-        height: 32px;
-        margin-left: 103.5px;
-        gap: 0px;
-        margin-top: -32px;
-      }
-  }
+.host p {
+  width: 93px;
+  height: 52px;
+  top: 608px;
+  left: 1170px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: right;
+  color: #FF6060;
+}
+
+.host img {
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Media query pour les écrans mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  .host {
+      position: relative;
+      top: 75px; 
+      right: 3px;
+      flex-direction: column; 
+      align-items: flex-start; 
+    } 
   
+    .host p {
+      width: 40%;
+      height: 33px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 17.11px;
+      text-align: right; 
+      margin: 10px 0 0 40px;
+    }
+
+    .host img {
+      width: 32px;
+      height: 32px;
+      margin-left: 103.5px;
+      gap: 0px;
+      margin-top: -32px;
+    }
+}
