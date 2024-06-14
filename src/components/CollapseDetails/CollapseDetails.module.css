@@ -28,6 +28,7 @@
   .collapseDetails {
       gap: 0;
       flex-direction: column;
+      margin-top: 10px;
   }
 
   .description, .equipements {

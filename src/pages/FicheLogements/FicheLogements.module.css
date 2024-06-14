@@ -39,19 +39,18 @@
 
 .tagsAndRating {
   display: flex;
-  flex-direction: column; 
-  position: relative; 
+  flex-direction: column;
+  position: relative;
   width: 100%;
   margin: 0 0 30px 0;
 }
 
 .rating {
-  max-width: 100%;
-  height: auto;
-  padding: 3px;
-  position: absolute;
   display: flex;
-  right: 0px;
+  align-items: center; 
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 
 .star {
@@ -64,6 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 10px; 
 }
 
 .tag {
@@ -76,7 +76,7 @@
   font-weight: 500;
 }
 
-/* Media query pour les écrans mobiles (max-width: 768px)  */
+/* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
   .container {
     margin: 0 5%;
@@ -85,52 +85,44 @@
   .title {
     width: 100%;
     margin: 0 5px;
-    font-size: 12px; 
+    font-size: 12px;
   }
 
   .titleHostContainer {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-
   }
 
   .location {
-    font-size: 12px; 
+    font-size: 12px;
     margin: 8px 0 0 5px;
   }
 
   .tagsAndRating {
     flex-direction: column;
     justify-content: flex-start;
-    height: 20px;
-    gap: 5px;
-    position: relative; 
+    margin: 0; 
   }
 
   .rating {
-    width: 98px;
-    height: 18px;
-    top: 20px;
-    left: 0px;
-    gap: 0px;
-    opacity: 0px;
+    top: -20px; 
+    left: 0;
+    gap: 0;
   }
 
   .star {
-    margin-right: 3px; 
+    margin-right: 3px;
   }
 
   .tags {
     max-width: 100%;
-    gap:  3px; 
-    margin: -10px 0 10px 2px;
+    gap: 3px;
+    margin-top: -60px; 
   }
 
   .tag {
-    font-size: 7px; 
-    padding: 5px 15px; 
+    font-size: 7px;
+    padding: 5px 15px;
     border-radius: 5px;
   }
-
-
 }
