@@ -21,18 +21,17 @@
 }
 
 .title {
-  margin-top: 10px;
+  margin: 10px 0 5px 0;
   font-size: 2rem; 
   font-weight: 500;
   text-align: left;
   color: #FF6060;
-  margin-bottom: 0px;
 }
 
 .location {
   font-size: 1.125rem; 
   color: black;
-  margin: 0;
+  margin: 0 2px;
   font-weight: 500;
   text-align: left;
 }
@@ -50,7 +49,7 @@
   align-items: center; 
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 0;
 }
 
 .star {
@@ -63,7 +62,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px; 
+  margin-top: 5px; 
 }
 
 .tag {
@@ -85,7 +84,7 @@
   .title {
     width: 100%;
     margin: 0 5px;
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .titleHostContainer {
@@ -94,30 +93,30 @@
   }
 
   .location {
-    font-size: 12px;
+    font-size: 13px;
     margin: 8px 0 0 5px;
   }
 
-  .tagsAndRating {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0; 
-  }
-
   .rating {
-    top: -20px; 
-    left: 0;
-    gap: 0;
+    width: 98px;
+    margin-top: -40px; 
+    height: 18px;
+    left: 3px;
+    gap: 0px;
+    opacity: 0px;
   }
 
   .star {
-    margin-right: 3px;
+    width: 13.41px;
+    height: 13px;
+    margin-right: 5px;
+    opacity: 0px;
   }
 
   .tags {
-    max-width: 100%;
-    gap: 3px;
-    margin-top: -60px; 
+    width: 100%;
+    gap: 5px;
+    margin: -75px 3px;
   }
 
   .tag {

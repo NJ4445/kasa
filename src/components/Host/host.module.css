@@ -3,9 +3,9 @@
   height: 50px;
   display: flex;
   align-items: center;
-  position: absolute; 
-  right: 105px; 
-  top: 575px;
+  position: relative; 
+  margin-top: 20px;
+
 }
 
 .host p {
@@ -30,29 +30,30 @@
 
 /* Media query pour les écrans mobiles (max-width: 768px) */
 @media (max-width: 768px) {
-  .host {
-      position: relative;
-      top: 27px; 
-      left: 200px;
-      flex-direction: column; 
-      align-items: flex-start; 
-    } 
-  
-    .host p {
-      width: 40%;
-      height: 33px;
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 17.11px;
-      text-align: right; 
-      margin: 10px 0 0 40px;
-    }
-
-    .host img {
-      width: 32px;
-      height: 32px;
-      margin-left: 103.5px;
-      gap: 0px;
-      margin-top: -32px;
-    }
+    .host {
+        width: 25%;
+        top: 10px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .host p {
+        width: 50px;
+        height: 33px;
+        text-align: right;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 17.11px;
+      }
+    
+      .host img {
+        width: 32px;
+        height: 32px;
+        margin-left: 10px; 
+      }
 }
+
+
+
